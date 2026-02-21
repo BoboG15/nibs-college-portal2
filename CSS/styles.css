@@ -831,22 +831,24 @@ footer {
 .footer-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 3.5rem 2rem;
+    padding: 3rem 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-column {
+    padding: 0;
 }
 
 .footer-column h3 {
     font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--white);
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid rgba(255,255,255,0.15);
 }
 
 .footer-column p {
@@ -985,9 +987,11 @@ footer {
     }
 
     .footer-container {
-        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .footer-column {
         text-align: center;
-        padding: 2.5rem 1.5rem;
     }
 
     .footer-column h3 {

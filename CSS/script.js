@@ -79,13 +79,13 @@ $(document).ready(function () {
 
         let isValid = true;
 
-        // Admission Number
+        // Admission Number (numbers only)
         const admissionNumber = $('#admissionNumber').val().trim();
         if (!admissionNumber) {
             showError('#admissionError', '#admissionNumber', 'Admission number is required.');
             isValid = false;
-        } else if (!/^[A-Z]{2,}\/\d{4}\/\d{3,}$/i.test(admissionNumber)) {
-            showError('#admissionError', '#admissionNumber', 'Invalid format. Use: NIBS/2024/001');
+        } else if (!/^\d+$/.test(admissionNumber)) {
+            showError('#admissionError', '#admissionNumber', 'Admission number must contain numbers only.');
             isValid = false;
         }
 
@@ -154,8 +154,8 @@ $(document).ready(function () {
     /* Real-time validation on blur */
     $('#admissionNumber').on('blur', function () {
         const val = $(this).val().trim();
-        if (val && !/^[A-Z]{2,}\/\d{4}\/\d{3,}$/i.test(val)) {
-            showError('#admissionError', '#admissionNumber', 'Invalid format. Use: NIBS/2024/001');
+        if (val && !/^\d+$/.test(val)) {
+            showError('#admissionError', '#admissionNumber', 'Admission number must contain numbers only.');
         } else {
             clearError('#admissionError', '#admissionNumber');
         }
