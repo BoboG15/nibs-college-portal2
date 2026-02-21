@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibs College — Event Portal</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="Images/Nibs Logo.png" alt="Nibs College Logo" class="logo">
+                <h1>Nibs College</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== BANNER SLIDESHOW ===== -->
+    <section class="banner-slideshow">
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="Images/campus.jpg" alt="Campus">
+                <div class="slide-content">
+                    <h2>Welcome to Nibs College Event Portal</h2>
+                    <p>Discover and register for exciting campus events</p>
+                    <a href="events.html" class="slide-btn">Explore Events</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="Images/students.jpg" alt="Students">
+                <div class="slide-content">
+                    <h2>Join Our Community Events</h2>
+                    <p>Connect with fellow students and expand your horizons</p>
+                    <a href="events.html" class="slide-btn">View Events</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="Images/classroom.jpg" alt="Campus Classes">
+                <div class="slide-content">
+                    <h2>Never Miss an Event</h2>
+                    <p>Stay updated with the latest happenings on campus</p>
+                    <a href="register.html" class="slide-btn">Register Now</a>
+                </div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)" aria-label="Previous slide">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)" aria-label="Next slide">&#10095;</a>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></span>
+            <span class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></span>
+            <span class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></span>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+        <!-- About Section -->
+        <section class="welcome-section">
+            <div class="welcome-icon">
+                <i class="fas fa-university"></i>
+            </div>
+            <div class="welcome-text">
+                <h2>About Our Event Portal</h2>
+                <p>Welcome to the Nibs College Event Portal! This platform is designed to help students stay informed about upcoming events, workshops, seminars, and activities happening on campus. Browse through our events page to discover what's coming up, and use our registration system to secure your spot at events that interest you.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Discover Events</h3>
+                <p>Browse through a comprehensive list of upcoming college events, workshops, and activities.</p>
+                <a href="events.html" class="feature-link">View Events <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Easy Registration</h3>
+                <p>Register for events quickly and easily through our streamlined registration form.</p>
+                <a href="register.html" class="feature-link">Register Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Stay Updated</h3>
+                <p>Never miss out on important events and opportunities at Nibs College.</p>
+                <a href="events.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3><i class="fas fa-graduation-cap"></i> About Nibs College</h3>
+                <p>Nibs College is committed to providing quality education and fostering a vibrant campus community through engaging events and activities.</p>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+                    <li><a href="register.html"><i class="fas fa-chevron-right"></i> Register</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <p>Stay connected with us on social media for the latest updates.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nibs College. All rights reserved. | Designed with <i class="fas fa-heart"></i> for students.</p>
+        </div>
+    </footer>
+
+    <script src="CSS/script.js"></script>
+</body>
+</html>

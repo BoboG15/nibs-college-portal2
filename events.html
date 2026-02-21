@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events — Nibs College</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="Images/Nibs Logo.png" alt="Nibs College Logo" class="logo">
+                <h1>Nibs College</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>Upcoming Events</h2>
+            <p>Discover exciting events happening at Nibs College</p>
+        </section>
+
+        <!-- Events Grid -->
+        <section class="events-container">
+
+            <!-- Event 1: Cultural Week -->
+            <div class="event-card">
+                <div class="event-image-wrapper">
+                    <img src="Images/cultural.jpg" alt="Cultural Week" class="event-image">
+                    <span class="event-badge">Free Entry</span>
+                </div>
+                <div class="event-content">
+                    <h3>Cultural Week</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> March 15–20, 2026</p>
+                    <p class="event-description">
+                        Join us for a week-long celebration of diverse cultures from around the world. Experience traditional music, dance performances, and authentic cuisine.
+                    </p>
+                    <div class="event-details-hidden">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> Main Campus Grounds</p>
+                        <p><i class="fas fa-clock"></i> <strong>Time:</strong> 9:00 AM – 6:00 PM Daily</p>
+                        <p><strong>Activities Include:</strong></p>
+                        <ul>
+                            <li>Traditional dance performances from various cultures</li>
+                            <li>International food festival</li>
+                            <li>Art exhibitions and craft workshops</li>
+                            <li>Cultural fashion show</li>
+                            <li>Music concerts featuring world music</li>
+                        </ul>
+                        <p><i class="fas fa-tag"></i> <strong>Registration Fee:</strong> Free for all students</p>
+                    </div>
+                    <button class="show-more-btn"><i class="fas fa-chevron-down"></i> Show More</button>
+                </div>
+            </div>
+
+            <!-- Event 2: Sports Day -->
+            <div class="event-card">
+                <div class="event-image-wrapper">
+                    <img src="Images/Sports.jpg" alt="Sports Day" class="event-image">
+                    <span class="event-badge event-badge--upcoming">Upcoming</span>
+                </div>
+                <div class="event-content">
+                    <h3>Sports Day</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> April 10, 2026</p>
+                    <p class="event-description">
+                        Participate in various sports competitions and showcase your athletic abilities. Compete for prizes and glory in multiple sporting events.
+                    </p>
+                    <div class="event-details-hidden">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> College Sports Complex</p>
+                        <p><i class="fas fa-clock"></i> <strong>Time:</strong> 7:00 AM – 5:00 PM</p>
+                        <p><strong>Sports Categories:</strong></p>
+                        <ul>
+                            <li>Track and Field Events (100m, 200m, 400m, Relay)</li>
+                            <li>Football Tournament</li>
+                            <li>Basketball 3v3 Competition</li>
+                            <li>Volleyball Matches</li>
+                            <li>Table Tennis Championship</li>
+                            <li>Chess Tournament</li>
+                        </ul>
+                        <p><i class="fas fa-trophy"></i> <strong>Prizes:</strong> Trophies and medals for winners</p>
+                        <p><i class="fas fa-hourglass-end"></i> <strong>Registration Deadline:</strong> April 5, 2026</p>
+                    </div>
+                    <button class="show-more-btn"><i class="fas fa-chevron-down"></i> Show More</button>
+                </div>
+            </div>
+
+            <!-- Event 3: Student's Election -->
+            <div class="event-card">
+                <div class="event-image-wrapper">
+                    <img src="Images/students election.jpg" alt="Student's Election" class="event-image">
+                    <span class="event-badge event-badge--important">Important</span>
+                </div>
+                <div class="event-content">
+                    <h3>Student's Election</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> May 5, 2026</p>
+                    <p class="event-description">
+                        Exercise your democratic right and vote for your student leaders. Meet the candidates and learn about their vision for the college.
+                    </p>
+                    <div class="event-details-hidden">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> College Assembly Hall</p>
+                        <p><i class="fas fa-clock"></i> <strong>Time:</strong> 8:00 AM – 4:00 PM</p>
+                        <p><strong>Positions Available:</strong></p>
+                        <ul>
+                            <li>Student Council President</li>
+                            <li>Vice President</li>
+                            <li>Secretary General</li>
+                            <li>Treasurer</li>
+                            <li>Sports Secretary</li>
+                            <li>Cultural Secretary</li>
+                        </ul>
+                        <p><i class="fas fa-vote-yea"></i> <strong>Voting Process:</strong> Electronic voting system with student ID verification</p>
+                        <p><i class="fas fa-microphone"></i> <strong>Candidates Debate:</strong> May 1, 2026 at 2:00 PM</p>
+                        <p><i class="fas fa-id-card"></i> <strong>Requirements:</strong> Valid student ID card</p>
+                    </div>
+                    <button class="show-more-btn"><i class="fas fa-chevron-down"></i> Show More</button>
+                </div>
+            </div>
+
+            <!-- Event 4: Tree Planting Day -->
+            <div class="event-card">
+                <div class="event-image-wrapper">
+                    <img src="Images/Tree planting.jpg" alt="Tree Planting Day" class="event-image">
+                    <span class="event-badge event-badge--green">Eco Event</span>
+                </div>
+                <div class="event-content">
+                    <h3>Tree Planting Day</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> June 5, 2026</p>
+                    <p class="event-description">
+                        Join our environmental conservation initiative and help make our campus greener. Plant trees and contribute to a sustainable future.
+                    </p>
+                    <div class="event-details-hidden">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> College Botanical Garden &amp; Campus Grounds</p>
+                        <p><i class="fas fa-clock"></i> <strong>Time:</strong> 6:00 AM – 12:00 PM</p>
+                        <p><strong>Activities:</strong></p>
+                        <ul>
+                            <li>Tree planting ceremony</li>
+                            <li>Environmental awareness workshop</li>
+                            <li>Composting demonstration</li>
+                            <li>Campus cleanup drive</li>
+                            <li>Sustainability seminar</li>
+                        </ul>
+                        <p><i class="fas fa-backpack"></i> <strong>What to Bring:</strong> Gardening gloves, water bottle, sun hat</p>
+                        <p><i class="fas fa-seedling"></i> <strong>Target:</strong> Plant 500 trees across campus</p>
+                        <p><i class="fas fa-utensils"></i> <strong>Refreshments:</strong> Breakfast and lunch provided</p>
+                        <p><i class="fas fa-certificate"></i> <strong>Certificate:</strong> All participants will receive a certificate of participation</p>
+                    </div>
+                    <button class="show-more-btn"><i class="fas fa-chevron-down"></i> Show More</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Join an Event?</h2>
+            <p>Secure your spot today — registration is quick and easy.</p>
+            <a href="register.html" class="cta-btn"><i class="fas fa-paper-plane"></i> Register Now</a>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3><i class="fas fa-graduation-cap"></i> About Nibs College</h3>
+                <p>Nibs College is committed to providing quality education and fostering a vibrant campus community through engaging events and activities.</p>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+                    <li><a href="register.html"><i class="fas fa-chevron-right"></i> Register</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <p>Stay connected with us on social media for the latest updates.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nibs College. All rights reserved. | Designed with <i class="fas fa-heart"></i> for students.</p>
+        </div>
+    </footer>
+
+    <script src="CSS/script.js"></script>
+</body>
+</html>
